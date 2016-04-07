@@ -1,5 +1,5 @@
-var app = angular.module('chatroom', []);
+angular.module('chatroom', []).config(function($httpProvider){
 
-app.config(function($httpProvider){
-  $httpProvider.interceptors.push('httpRequestInterceptor');
+    $httpProvider.interceptors.push('httpRequestInterceptor');
+    
 });
